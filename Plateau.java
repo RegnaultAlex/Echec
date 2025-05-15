@@ -6,6 +6,8 @@ class Plateau{
 	public Plateau(boolean cheat)
 	{
 		pieces = new ArrayList<Piece>();
+
+		
 		this.ajouterPiece(new Tour('B', new Position("A1")));
 		this.ajouterPiece(new Cavalier('B', new Position("B1")));
 		this.ajouterPiece(new Fou('B', new Position("C1")));
@@ -14,6 +16,19 @@ class Plateau{
 		this.ajouterPiece(new Fou('B', new Position("F1")));
 		this.ajouterPiece(new Cavalier('B', new Position("G1")));
 		this.ajouterPiece(new Tour('B', new Position("H1")));
+
+
+
+		
+		this.ajouterPiece(new Tour('N', new Position("A8")));
+		this.ajouterPiece(new Cavalier('N', new Position("B8")));
+		this.ajouterPiece(new Fou('N', new Position("C8")));
+		this.ajouterPiece(new Dame('N', new Position("D8")));
+		this.ajouterPiece(new Roi('N', new Position("E8")));
+		this.ajouterPiece(new Fou('N', new Position("F8")));
+		this.ajouterPiece(new Cavalier('N', new Position("G8")));
+		this.ajouterPiece(new Tour('N', new Position("H8")));
+
 
 		if (!cheat)
 		{
@@ -34,6 +49,8 @@ class Plateau{
 			// Ajout des Favalier
 			this.ajouterPiece(new Favalier('B', new Position("D2")));
 			this.ajouterPiece(new Favalier('B', new Position("E2")));
+			this.ajouterPiece(new Favalier('N', new Position("D7")));
+			this.ajouterPiece(new Favalier('N', new Position("E7")));
 
 
 			// Ajout des Pions
@@ -52,14 +69,7 @@ class Plateau{
 		}
 
 
-		this.ajouterPiece(new Tour('N', new Position("A8")));
-		this.ajouterPiece(new Cavalier('N', new Position("B8")));
-		this.ajouterPiece(new Fou('N', new Position("C8")));
-		this.ajouterPiece(new Dame('N', new Position("D8")));
-		this.ajouterPiece(new Roi('N', new Position("E8")));
-		this.ajouterPiece(new Fou('N', new Position("F8")));
-		this.ajouterPiece(new Cavalier('N', new Position("G8")));
-		this.ajouterPiece(new Tour('N', new Position("H8")));
+
 	}
 
     public Plateau() 
