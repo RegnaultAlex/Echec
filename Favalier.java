@@ -1,10 +1,24 @@
 import java.util.ArrayList;
 
-public class Favalier extends Cavalier
+public class Favalier extends Piece
 {
-    public Favalier(char couleur, Position position)
+
+    public Favalier()
+    {
+        super('B', new Position());
+    }
+
+    public Favalier(char couleur,Position position)
     {
         super(couleur, position);
+    }
+
+
+
+
+    public String getType()
+    {
+        return new String("favalier");
     }
 
     @Override

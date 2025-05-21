@@ -1,14 +1,24 @@
 import java.util.ArrayList;
 
-public class Tavalier extends Cavalier
+public class Tavalier extends Piece
 {
 
+
+    public Tavalier()
+    {
+        super('B', new Position());
+    }
 
     public Tavalier(char couleur,Position position)
     {
         super(couleur, position);
     }
 
+
+    public String getType()
+    {
+        return new String("tavalier");
+    }
 
 
     @Override

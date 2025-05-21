@@ -8,7 +8,7 @@ class MainGraphique{
 
     public static final int tailleCase = 75;
 
-    public static void dessinerPlateau(Fenetre f, Plateau p, char couleurQuiJoue) throws ErreurCoordonneesException
+    public static void dessinerPlateau(Fenetre f, Plateau p, char couleurQuiJoue) 
 	{
 	f.effacer();
 
@@ -62,7 +62,7 @@ class MainGraphique{
 
     
 
-    public static void afficheDepPossible(Fenetre f, ArrayList<Position> l) throws ErreurCoordonneesException
+    public static void afficheDepPossible(Fenetre f, ArrayList<Position> l) 
 	{
 	for(Position p : l){
 	    int indiceX = p.getX();
@@ -71,7 +71,7 @@ class MainGraphique{
 	}
     }
     
-    public static void main(String[] args)  throws ErreurCoordonneesException
+    public static void main(String[] args)  
 	{
 	Plateau p = new Plateau();
 	Fenetre f = new Fenetre("Jeu d'échecs", 8*MainGraphique.tailleCase, 10*MainGraphique.tailleCase);
